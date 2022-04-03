@@ -153,7 +153,11 @@ a {
 }
 
 .header {
-  border-bottom: 40px solid #000;
+  background-color: #fff;
+  border-bottom: 1px solid #444;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .wrap {
@@ -165,13 +169,14 @@ a {
   text-align: center;
   margin-bottom: 28px;
   font-weight: 500;
+  color: #333;
 }
 .logo a {
   display: block;
   font-size: 24px;
-  color: #000;
-  font-weight: 900;
-  padding: 30px 0;
+  color: #333;
+  font-weight: 700;
+  padding: 20px 0;
   transition: .3s;
 }
 .logo:hover a{
@@ -187,7 +192,7 @@ a {
 }
 .nav-menu a {
   font-size: 20px;
-  color: #000;
+  color: #333;
   font-weight: 700;
   display: inline-block;
   padding-left: 48px;
@@ -231,17 +236,23 @@ a {
 .banner {
   width: 100%;
   height: 420px;
-  background: url("images/banner.png") center center / 100% 100%;
+  background: url("images/banner.jpg")center center / 100% 100%;
   background-size: cover;
   margin: 30px 0 60px;
   display: flex;
   align-items: flex-end;
-  padding: 0 0 48px 52px;
+  padding: 0 0 40px 52px;
+  border-radius: 8px;
 }
 .banner h2 {
-  font-size: 32px;
+  font-size: 28px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.banner h2 span:first-child{
+  border-right: 1px solid #adb5bd;
+  padding-right: 8px;
 }
 .advantage {
   display: flex;
@@ -288,6 +299,8 @@ a {
 .compare {
   background-color: #f8f8f8;
   padding: 48px 0 64px;
+  color: #212529;
+  background-color: #ffd0b3;
 }
 .compare-table {
   width: 70%;
@@ -307,7 +320,7 @@ a {
   padding: 12px 0;
 }
 .compare-table .material-icons {
-  color: #6a33ff;
+  color: #ff7b3e;
   transform: scale(1.5);
 }
 .text-muted {
@@ -331,12 +344,9 @@ a {
 }
 
 .recommendation {
-  background-color: #301e5f;
+  /* background-color: #301e5f; */
   padding: 60px 0 80px;
   margin-bottom: 32px;
-}
-.recommendation h3 {
-  color: #fff;
 }
 .recommendation-wall {
   display: flex;
@@ -377,7 +387,7 @@ a {
   padding-left: 8px;
 }
 .recommend-text {
-  color: #6a33f8;
+  color: #ff7b3e;
   font-size: 14px;
 }
 .recommendation-top {
@@ -390,7 +400,8 @@ a {
   }
 }
 .transport {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
+  background-color: #f8f9fa;
 }
 .cardImg {
   width: 115px;
@@ -459,6 +470,7 @@ a {
 .productDisplay {
   padding: 0 15px;
   margin-bottom: 60px;
+  background-color: #f8f9fa;
 }
 .productWrap {
   display: flex;
@@ -486,8 +498,8 @@ a {
 .productCard .productType {
   position: absolute;
   color: #fff;
-  background-color: #000;
-  padding: 8px 24px;
+  background-color: #333;
+  padding: 6px 24px;
   top: 10px;
   right: -10px;
   font-weight: 100;
@@ -505,13 +517,13 @@ a {
   display: block;
   font-size: 20px;
   color: #fff;
-  background-color: #000;
+  background-color: #333;
   padding: 10px 0;
   text-align: center;
   transition: .2s;
 }
 .productCard a:hover{
-  background-color: #301E5F;
+  background-color: #202020;
 }
 .productCard h4,del {
   font-size: 20px;
@@ -531,7 +543,6 @@ a {
 }
 
 .shoppingCart {
-  background-color: #f8f8f8;
   padding: 48px 0 70px;
 }
 .shoppingCart-table {
@@ -542,8 +553,7 @@ a {
 .shoppingCart-table tr {
   border-bottom: 1px solid #bfbfbf;
 }
-.shoppingCart-table tr:first-child,
-.shoppingCart-table tr:last-child {
+.shoppingCart-table tr:first-child{
   border-bottom: 0;
 }
 .shoppingCart-table th {
@@ -558,9 +568,12 @@ a {
 .shoppingCart-table td button {
   border: 0;
 }
+.shoppingCart-table button:hover{
+  color: #ff7b3e;
+}
 .remove,.add{
   font-size: 20px;
-  background-color: #f8f8f8;
+  background-color: #fff;
   cursor: pointer;
 }
 .cardItem-title {
@@ -580,18 +593,27 @@ a {
   font-size: 32px;
   color: #000;
 }
+.discardBtn a:hover{
+  color: #ff7b3e;
+}
 .discardAllBtn {
-  color: #000;
+  color: #333;
   display: inline-block;
   padding: 5px 15px;
-  border: 1px solid #000;
+  border: 1px solid #333;
   border-radius: 5px;
+  transition: .3s;
 }
-.finalTotal {
+.discardAllBtn:hover{
+  color: #fff;
+  background-color: #202020;
+}
+.totalPrice {
   font-size: 28px;
 }
 .orderInfo {
   padding: 60px 0 80px;
+  background-color: #f8f9fa;
 }
 .orderInfo-formGroup {
   max-width: 365px;
@@ -625,7 +647,7 @@ a {
   min-height: 48px;
   display: block;
   margin: 50px auto 0;
-  background-color: #000;
+  background-color: #ff7b3e;
   color: #fff;
   border: 0;
   border-radius: 5px;
@@ -634,11 +656,42 @@ a {
   transition: .2s;
 }
 .orderInfo-btn:hover{
-  background-color: #301E5F;
+  background-color: #ff6118;
 }
 @media (max-width: 767px){
   .orderInfo-message{
     position: static;
     transform: translateY(0);
   }
+}
+.disabled{
+  opacity: .65;
+  pointer-events: none;
+}
+footer{
+  padding: 16px 0;
+  border-top: 1px solid #8f8f8f;
+  text-align: center;
+  font-size: 14px;
+}
+.goTop{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fd9a6c;
+  font-size: 28px;
+  font-weight: 500;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgba(255,255,255,.5);
+  border-radius: 50%;
+  border: 1px solid #fd9a6c;
+  z-index: 11;
+  transition: .2s;
+}
+.goTop:hover{
+  color: #fc6621;
 }

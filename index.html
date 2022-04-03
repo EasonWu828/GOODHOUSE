@@ -5,17 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WOWOROOM</title>
+  <title>GOODHOUSE</title>
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GOODHOUSE" />
+  <meta property="og:description" content="GOODHOUSE | 跟您一起品味生活" />
+  <meta property="og:site_name" content="GOODHOUSE" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="all.css">
 </head>
 
 <body>
   <div class="header">
     <div class="wrap">
-      <h1 class="logo"><a href="#">WOWOROOM</a></h1>
+      <h1 class="logo"><a href="#">GOODHOUSE</a></h1>
       <span class="material-icons menuToggle">menu</span>
       <nav class="nav-menu">
         <a href="#bedAdvantage">床墊優勢</a>
@@ -28,23 +34,24 @@
   <section>
     <div class="wrap">
       <div class="banner">
-        <h2>窩窩家居
-          <br> 跟您一起品味生活
+        <h2>
+          <span>GOODHOUSE</span>
+          <span>跟您一起品味生活</span>
         </h2>
       </div>
       <h3 id="bedAdvantage">床墊優勢</h3>
       <ul class="advantage">
-        <li>
-            <img src="images/bedAdvantage/1.png" alt="advantage">
-            <div class="introMask"></div>
-            <p class="introText">原木料環保</p>
+        <li data-aos="flip-left">
+          <img src="images/bedAdvantage/1.png" alt="advantage">
+          <div class="introMask"></div>
+          <p class="introText">原木料環保</p>
         </li>
-        <li>
+        <li data-aos="flip-left">
           <img src="images/bedAdvantage/2.png" alt="advantage">
           <div class="introMask"></div>
           <p class="introText">簡約設計</p>
         </li>
-        <li>
+        <li data-aos="flip-left">
           <img src="images/bedAdvantage/3.png" alt="advantage">
           <div class="introMask"></div>
           <p class="introText">好組裝</p>
@@ -52,7 +59,7 @@
       </ul>
     </div>
   </section>
-  <section class="compare">
+  <section class="compare" data-aos="fade-up">
     <div class="wrap">
       <h3>家具比較</h3>
       <div class="overflowWrap">
@@ -129,7 +136,7 @@
     <div class="wrap">
       <h3>好評推薦</h3>
       <ul class="recommendation-wall">
-        <li>
+        <li data-aos="flip-left">
           <div class="pic"><img src="images/recommendation/bed-1.png" alt="bed-1"></div>
           <div class="recommendation-content">
             <div class="text">
@@ -142,7 +149,7 @@
             <p>CP值很高。</p>
           </div>
         </li>
-        <li>
+        <li data-aos="flip-left">
           <div class="pic"><img src="images/recommendation/bed-3.png" alt="bed-3"></div>
           <div class="recommendation-content">
             <div class="text">
@@ -155,7 +162,7 @@
             <p>很喜歡～還有送三年保固</p>
           </div>
         </li>
-        <li>
+        <li data-aos="flip-left">
           <div class="pic"><img src="images/recommendation/bed-5.png" alt="bed-5"></div>
           <div class="recommendation-content">
             <div class="text">
@@ -168,7 +175,7 @@
             <p>廚房必備美用品！</p>
           </div>
         </li>
-        <li>
+        <li data-aos="flip-left">
           <div class="pic"><img src="images/recommendation/bed-2.png" alt="bed-2"></div>
           <div class="recommendation-content">
             <div class="text">
@@ -181,7 +188,7 @@
             <p>非常舒適，有需要會再回購</p>
           </div>
         </li>
-        <li>
+        <li data-aos="flip-left">
           <div class="pic"><img src="images/recommendation/bed-4.png" alt="bed-4"></div>
           <div class="recommendation-content">
             <div class="text">
@@ -194,7 +201,7 @@
             <p>品質不錯～</p>
           </div>
         </li>
-        <li>
+        <li data-aos="flip-left">
           <div class="pic"><img src="images/recommendation/bed-6.png" alt="bed-6"></div>
           <div class="recommendation-content">
             <div class="text">
@@ -210,7 +217,7 @@
       </ul>
     </div>
   </section>
-  <section class="transport" id="transport">
+  <section class="transport" id="transport" data-aos="fade-up">
     <div class="wrap">
       <h3>運送方式</h3>
       <ul class="transport-intro">
@@ -245,7 +252,7 @@
       </ul>
     </div>
   </section>
-  <section class="productDisplay">
+  <section class="productDisplay" data-aos="fade-up">
     <div class="wrap">
       <select name="" class="productSelect">
         <option value="全部" selected>全部</option>
@@ -254,51 +261,19 @@
         <option value="窗簾">窗簾</option>
       </select>
       <ul class="productWrap">
-        <li class="productCard">
-          <h4 class="productType">新品</h4>
-          <div>
-          <img
-            src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/dp6gW6u5hkUxxCuNi8RjbfgufygamNzdVHWb15lHZTxqZQs0gdDunQBS7F6M3MdegcQmKfLLoxHGgV3kYunUF37DNn6coPH6NqzZwRfhbsmEblpJQLqXLg4yCqUwP3IE.png"
-            alt="床架">
-            </div>
-          <a href="#" class="addCardBtn">加入購物車</a>
-          <h4>Antony 雙人床架／雙人加大</h4>
-          <del class="originPrice">NT$18,000</del>
-          <p class="nowPrice">NT$12,000</p>
-        </li>
+        <!-- 接產品api -->
       </ul>
     </div>
   </section>
-  <section class="shoppingCart">
+  <section class="shoppingCart" data-aos="fade-up">
     <div class="wrap">
       <h3>我的購物車</h3>
       <div class="overflowWrap">
         <table class="shoppingCart-table">
+          <tbody class="cart-list">
+            <!-- js 顯示購物車資訊 -->
+          </tbody>
           <tbody>
-            <tr>
-              <th width="40%">品項</th>
-              <th class="15">單價</th>
-              <th class="15">數量</th>
-              <th class="15">金額</th>
-              <th class="15"></th>
-            </tr>
-            <tr>
-              <td>
-                <div class="cardItem-title">
-                  <img src="https://picsum.photos/80/80/?random=10">
-                  <p>Antony 雙人床架／雙人加大</p>
-                </div>
-              </td>
-              <td>NT$12,000</td>
-              <td class="num">
-                <button class="material-icons remove">remove</button>
-                1
-                <button class="material-icons add">add</button>
-              </td>
-              <td>NT$12,000</td>
-              <td class="discardBtn"><a href="#" class="material-icons">clear</a>
-              </td>
-            </tr>
             <tr>
               <td>
                 <a href="#" class="discardAllBtn">刪除所有品項</a>
@@ -306,14 +281,14 @@
               <td></td>
               <td></td>
               <td>總金額</td>
-              <td class="finalTotal">NT$13,980</td>
+              <td class="totalPrice"></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
   </section>
-  <section class="orderInfo" id="orderInfo">
+  <section class="orderInfo" id="orderInfo" data-aos="fade-up">
     <div class="wrap">
       <h3>填寫預訂資料</h3>
       <form action="" class="orderInfo-form">
@@ -321,44 +296,53 @@
           <label for="customerName">姓名</label>
           <div class="orderInfo-inputWrap">
             <input type="text" class="orderInfo-input" id="customerName" placeholder="請輸入姓名" name="姓名">
-            <p class="orderInfo-message" data-message="姓名">必填</p>
+            <p class="orderInfo-message" data-message="姓名"></p>
           </div>
         </div>
         <div class="orderInfo-formGroup">
           <label for="customerPhone">電話</label>
           <div class="orderInfo-inputWrap">
             <input type="tel" class="orderInfo-input" id="customerPhone" placeholder="請輸入電話" name="電話">
-            <p class="orderInfo-message" data-message="電話">必填</p>
+            <p class="orderInfo-message" data-message="電話"></p>
           </div>
         </div>
         <div class="orderInfo-formGroup">
           <label for="customerEmail">Email</label>
           <div class="orderInfo-inputWrap">
             <input type="email" class="orderInfo-input" id="customerEmail" placeholder="請輸入 Email" name="Email">
-            <p class="orderInfo-message" data-message="Email">必填</p>
+            <p class="orderInfo-message" data-message="Email"></p>
           </div>
         </div>
         <div class="orderInfo-formGroup">
           <label for="customerAddress">寄送地址</label>
           <div class="orderInfo-inputWrap">
             <input type="text" class="orderInfo-input" id="customerAddress" placeholder="請輸入寄送地址" name="寄送地址">
-            <p class="orderInfo-message" data-message="寄送地址">必填</p>
+            <p class="orderInfo-message" data-message="寄送地址"></p>
           </div>
         </div>
         <div class="orderInfo-formGroup">
           <label for="tradeWay">交易方式</label>
           <div class="orderInfo-inputWrap">
             <select name="交易方式" id="tradeWay" class="orderInfo-input">
-              <option value="ATM" selected>ATM</option>
+              <option value="" selected disabled>選擇付款方式</option>
+              <option value="ATM">ATM</option>
               <option value="信用卡">信用卡</option>
               <option value="超商付款">超商付款</option>
             </select>
+            <p class="orderInfo-message" data-message="交易"></p>
           </div>
         </div>
         <input type="submit" value="送出預訂資料" class="orderInfo-btn">
       </form>
     </div>
   </section>
+  <footer>
+    &copy;2022 All Rights Reserved
+  </footer>
+  <a href="#" class="goTop material-icons">arrow_upward</a>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="all.js"></script>
 </body>
 
