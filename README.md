@@ -1,5 +1,5 @@
-# GOODHOUSE 寢飾單頁電商網站
-
+# GOODHOUSE 寢俱單頁電商網站
+Demo : https://easonwu828.github.io/GOODHOUSE/
 ## 使用技術
 * 切版：`HTML` `CSS` 
 * 動態：`SweetAlert` `AOS`
