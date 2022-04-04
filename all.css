@@ -400,7 +400,7 @@ a {
   }
 }
 .transport {
-  padding-bottom: 72px;
+  padding: 30px 0 72px;
   background-color: #f8f9fa;
 }
 .cardImg {
@@ -479,6 +479,7 @@ a {
 .productSelect {
   min-width: 255px;
   min-height: 38px;
+  font-size: 14px;
   color: #495057;
   border: 1px solid #ced4da;
   text-indent: 10px;

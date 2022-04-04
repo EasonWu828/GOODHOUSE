@@ -34,7 +34,6 @@ const productSelect = document.querySelector('.productSelect');
 const addCardBtn = document.querySelector('.addCardBtn');
 const shoppingCartTable = document.querySelector('.shoppingCart-table');
 const api_path = 'alanwu0828';
-const url = `https://livejs-api.hexschool.io/api/livejs/v1/customer/${api_path}/`;
 
 let productData = [];
 let cartData = [];
@@ -89,7 +88,6 @@ function selectProductList(e) {
 function getCartList() {
   axios.get(`https://livejs-api.hexschool.io/api/livejs/v1/customer/${api_path}/carts`)
     .then((res) => {
-      console.log(res.data);
       cartData = res.data.carts;
       let finalTotal = res.data.finalTotal;
       renderCartList(cartData, finalTotal);
