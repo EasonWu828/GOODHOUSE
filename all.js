@@ -296,39 +296,10 @@ function createOrder(e){
   const email = document.querySelector('#customerEmail').value.trim();
   const address = document.querySelector('#customerAddress').value.trim();
   const payment = document.querySelector('#tradeWay').value;
-  if (name === '' || name.length < 2){
+  if (name === '' || name.length < 2) {
     message[0].textContent = '請輸入姓名';
-  }else if(tel === ''){
-    message[1].textContent = '請輸入電話號碼';
-  } else if (email === ''){
-    message[2].textContent = '請輸入 Email';
-  } else if (address === '') {
-    message[3].textContent = '請輸入地址';
-  } else if (payment === ''){
-    message[4].textContent = '請選擇交易方式';
+    return;
   }else{
-    let obj ={
-      user:{
-        name,
-        tel,
-        email,
-        address,
-        payment
-      }
-    }
-    axios.post(`https://livejs-api.hexschool.io/api/livejs/v1/customer/${api_path}/orders`,{
-      data: obj
-    })
-    .then((res)=>{
-      swal("訂單建立成功", "", "success");
-      message.forEach((item)=>{
-        item.textContent = '';
-      })
-      form.reset();
-      getCartList()
-    })
-    .catch((err)=>{
-      console.log(err);
-    })
+    message[0].textContent = '';
   }
 }
